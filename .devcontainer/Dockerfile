@@ -162,7 +162,7 @@ USER $USERNAME
 
 WORKDIR ${USER_HOME}
 
-RUN cargo install xargo --version 0.3.25
+RUN cargo install xargo --version 0.3.25 --locked
 RUN git clone https://github.com/scrtlabs/SecretNetwork.git
 
 WORKDIR ${USER_HOME}/SecretNetwork

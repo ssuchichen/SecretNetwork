@@ -26,7 +26,7 @@ COPY Makefile Makefile
 
 COPY rust-toolchain rust-toolchain
 RUN rustup component add rust-src
-RUN cargo install xargo --version 0.3.25
+RUN cargo install xargo --version 0.3.25 --locked
 
 COPY deployment/ci/enclave-test.sh .
 RUN chmod +x enclave-test.sh

@@ -39,7 +39,7 @@ chmod +x ./scripts/install-sgx.sh
 sudo ./scripts/install-sgx.sh true true true false
 
 # Install Xargo
-cargo install xargo --version 0.3.25
+cargo install xargo --version 0.3.25 --locked
 
 # Install submodules
 git submodule init
